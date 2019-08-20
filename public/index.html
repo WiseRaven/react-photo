@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Gemia Online Demo - Gemia</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+    <script>
+        var environment = "%NODE_ENV%";
+        if (environment === "production") {
+            var userId = 'test@user.com';
+        }
+    </script>
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css">
+
+
+
+    <link rel="stylesheet" type="text/css" href="css/icons.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/section.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+
+    <!-- <script src="js/main.js"></script> -->
+
+</head>
+<body>
+<div class="page">
+    <!-- header template start -->
+<header class="page-header">
+    <div class="container-fluid clearfix">
+        <div class="brand-container">
+            <div class="brand-holder">
+                <a href="index.html" class="brand ms-lock-scale">
+                    <span class="icon icon-s brand-icon">gemia</span>
+
+                    <span class="icon icon-xs fav3d-icon sup"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="dropdown lang-dropdown" data-ready="dropdown">
+            <span class="dropdown-toggle">en</span>
+            <span class="dropdown-icon texticon-chevron-down ml-1 d-none d-xl-inline-block"></span>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">ru</a>
+                <a href="#" class="dropdown-item active">en</a>
+                <a href="#" class="dropdown-item">ch</a>
+            </div>
+        </div>
+
+        <ul class="list-inline navbar-menu d-none d-xl-block">
+            <li class="list-inline-item"><a href="#" class="btn btn-outline-light"><span class="d-none d-xxl-inline">Try </span>Online Demo</a></li>
+            <li class="list-inline-item"><a href="#" class="btn btn-primary btn-xxl-cat">Buy Now <span class="d-none d-xxl-inline">$32</span></a></li>
+        </ul>
+
+        <a class="nav-toggler icon nav-icon ms-lock-scale" id="nav-toggler"
+           href="#nav"
+           data-toggle
+           data-toggle-callback="navToggled"
+           aria-expanded="false"
+           aria-label="Toggle navigation">
+            Menu
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+</header>
+<!-- header template end -->
+
+
+        <!-- header template start -->
+<nav aria-label="breadcrumb" class="breadcrumb-wrapper">
+    <ol class="breadcrumb container-fluid">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+
+        <li class="breadcrumb-item active" aria-current="page">Gemia Online Demo</li>
+    </ol>
+</nav>
+<!-- header template end -->
+
+
+<!-- page content start -->
+<main class="page-content" data-ready="demo">
+    <div class="section-wrapper inherit bot-grad" id="wrapper">
+
+        <div class="section footer-wrapper inherit wrapped-next view view-level-1" id="register"
+             data-check-size=".page-content"
+             data-scroll="window"
+             data-scroll-trigger=".page-footer"
+             data-scroll-callback="expandFooter">
+            <div class="container-fluid inherit"
+                 data-scroll="window"
+                 data-scroll-callback="fadeHeader">
+                <ul class="nav steps-nav justify-content-center">
+                    <li class="nav-item success">
+                        <span href="#" class="nav-link">
+                            <span class="badge badge-pill badge-primary text-light"><span class="texticon-checkmark align-top"></span></span>
+                            <span class="nav-label">Sign In</span>
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <span href="#" class="nav-link active">
+                            <span class="badge badge-pill badge-primary text-light"><span class="texticon-checkmark"></span></span>
+                            <span class="nav-label">Confirm</span>
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <span href="#" class="nav-link">
+                            <span class="badge badge-pill badge-primary text-light"><span class="texticon-checkmark"></span></span>
+                            <span class="nav-label">Demo</span>
+                        </span>
+                    </li>
+                </ul>
+
+                <div class="d-flex inherit align-items-start align-items-md-center">
+
+                    <div class="section-body">
+                        <div class="section-content">
+                            <div class="view view-level-2 active" id="signin">
+                                <h1 class="h2 mb-2">Ready to #gem <br>your photos?</h1>
+
+                                <p class="lead mb-3">Sign in with your email <br>to try gemia online demo</p>
+
+                                <form class="reg-form signin-form">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email" value="" required>
+                                    </div>
+
+                                    <p class="form-group text-info">
+                                        <span class="form-check">
+                                            <label class="form-check-wrapper">
+                                                <input class="form-check-input" type="checkbox" value="" id="subscribe">
+                                                <span class="form-check-mask"></span>
+                                            </label>
+
+                                            <label class="form-check-label" for="subscribe">Subscribe to gemia learning materials</label>
+                                        </span>
+                                    </p>
+
+                                    <div class="row sm-gutters align-items-center flex-nowrap">
+                                        <p class="col-auto mb-xl-0">
+                                            <button class="btn btn-primary btn-lg" type="submit"
+                                                data-toggle="active"
+                                                data-toggle-target="#register/confirm"
+                                                data-toggle-callback="activateSection">Sign In</button>
+                                        </p>
+
+                                        <p class="col-auto text-light mb-pl-0 mb-xl-0">or authorize using <br><a href="#"><span class="texticon-xs texticon-facebook align-middle"></span> <span class="align-middle">facebook</span></a> <span class="mx-1">or</span> <a href="#"><span class="texticon-xs texticon-google align-middle"></span> <span class="align-middle">google</span></a></p>
+                                    </div>
+                                </form>
+                            </div><!-- .view -->
+
+                            <div class="view view-level-2" id="confirm">
+                                <h2 class="mb-2">Confirm your email</h2>
+
+                                <p class="lead mb-3">We sent you a security code to your email. <br>Enter code below and start online demo.</p>
+
+                                <form class="reg-form confirm-form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Code" value="" required>
+                                    </div>
+
+                                    <p class=" mb-xl-0">
+                                        <button class="btn btn-primary btn-lg" type="submit"
+                                                data-toggle="active"
+                                                data-toggle-target="#app/main/compare"
+                                                data-toggle-callback="activateSection">Confirm Email</button>
+                                    </p>
+                                </form>
+                            </div><!-- .view -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div><!-- .section -->
+
+
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root" class='section app-section footer-wrapper inherit view view-level-1 active'></div>
+
+
+        <small class="section-wrapper-meta">@aljoscha-laschgari photo</small>
+        <style type="text/css">
+            #wrapper {
+                background-image: url(images/dwrapper_t.jpg);
+            }
+            @media (min-width: 992px), (min-height: 992px) {
+                #wrapper {
+                    background-image: url(images/dwrapper.jpg);
+                }
+            }
+        </style>
+    </div>
+</main>
+
+
+
+<link rel="stylesheet" type="text/css" href="css/assets/cocoen.css">
+<script src="js/cocoen.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/assets/demo.css">
+<!-- <script src="js/demo.js"></script> -->
+<link rel="stylesheet" type="text/css" href="css/App.css">
+
+<!-- page content end -->
+
+        <!-- footer template start -->
+<footer class="page-footer">
+    <div class="container-fluid footer-container clearfix" id="nav-wrapper">
+        <div class="credentials-wrapper">
+            <div class="page-nav">
+                <div class="nav nav-top">
+                    <a href="#" data-toggle data-toggle-callback="toTop"><span class="texticon-mouse texticon-s align-middle mr-2"></span> Back on Top</a>
+                </div>
+
+                <nav class="nav-container d-flex align-items-center">
+                    <div class="w-100 ">
+                        <div class="row menu-wrapper" id="nav">
+                            <div class="col-6 col-lg-3">
+                                <strong class="cat">Product</strong>
+
+                                <ul class="row nav sub-nav flex-column">
+                                    <li class="nav-item"><a href="technology.html" class="nav-link">Gemia Technology</a></li>
+                                    <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing Plans</a></li>
+                                    <li class="nav-item"><a href="requirements.html" class="nav-link">Tech Requirements</a></li>
+                                    <li class="nav-item"><a href="demo.html" class="nav-link">Online Demo</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-lg-3">
+                                <strong class="cat">Support</strong>
+
+                                <ul class="row nav sub-nav flex-column">
+                                    <li class="nav-item"><a href="guide.html" class="nav-link">User Guide</a></li>
+                                    <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+                                    <li class="nav-item"><a href="supported.html" class="nav-link">Supported Cameras</a></li>
+                                    <li class="nav-item"><a href="terms.html#privacy" class="nav-link">Legal & Privacy</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-lg-3">
+                                <strong class="cat">Contact</strong>
+
+                                <ul class="row nav sub-nav flex-column">
+                                    <li class="nav-item"><a href="404.html" class="nav-link">Testimonials</a></li>
+                                    <li class="nav-item"><a href="blog.html" class="nav-link">News</a></li>
+                                    <li class="nav-item"><a href="404.html" class="nav-link">Contact Us</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-lg-3">
+                                <strong class="cat">Subscribe</strong>
+
+                                <p class="text-light">Can't find your camera here? <span class="d-none d-md-inline">Please our check full list of supported cameras</span></p>
+
+                                <form class="form-inline align-items-start">
+                                    <div class="form-group mr-sm-2 mb-sm-4 flex-fill">
+                                        <input type="email" placeholder="Your Email" class="form-control w-100">
+                                    </div>
+
+                                    <button class="btn btn-outline-light">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <ul class="list-inline menu socials-menu text-center text-nowrap float-lg-right mb-lg-0 d-fixed-none">
+                <li class="list-inline-item"><a href="#" target="_blank" rel="nofollow"><span class="texticon-xs texticon-facebook2 align-text-top"></span></a></li>
+                <li class="list-inline-item"><a href="#" target="_blank" rel="nofollow"><span class="texticon-xs texticon-youtube align-text-top"></span></a></li>
+                <li class="list-inline-item"><a href="#" target="_blank" rel="nofollow"><span class="texticon-xs texticon-ig align-text-top"></span></a></li>
+            </ul>
+
+            <div class="credentials">
+                <p class="copy mr-2">© 2019 gemia. <span class="d-none d-expanded-inline d-fixed-none d-print-inline">All rights reserved.</span></p>
+                <p class="terms d-none d-expanded-inline d-fixed-none d-print-none">
+                    <a href="terms.html" class="ml-2 mr-3" title="Terms and conditions">Terms and conditions</a>
+                    <span class="d-inline-block">Developed by <a href="#" class="ml-1" title="Developed by ARVI" target="_blank">ARVI LLC</a></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer template end -->
+    </div>
+</body>
+</html>

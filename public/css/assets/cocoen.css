@@ -1,0 +1,136 @@
+.cocoen {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 200px;
+    min-height: 90px;
+    /*margin: 0;*/
+    padding: 0;
+    overflow: visible;
+    line-height: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: left;
+}
+
+.cocoen.inherit {
+    max-width: none;
+}
+
+.cocoen * {
+    box-sizing: inherit
+}
+
+.cocoen img,
+.cocoen picture > img {
+    max-width: none
+}
+
+.cocoen > img,
+.cocoen > picture > img {
+    display: block;
+    width: 100%
+}
+
+.cocoen > div:first-child,
+picture .cocoen > div {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 50%
+}
+
+.cocoen-drag {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    margin: -6px -1px;
+    width: 2px;
+    color: var(--info);
+    background: var(--info);
+    cursor: ew-resize;
+}
+
+.cocoen-label {
+    position: absolute;
+    border: none;
+    left: 100%;
+    top: auto;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    margin: 3em 2em;
+}
+
+.cocoen-label:first-child {
+    right: 100%;
+    left: auto;
+}
+
+.cocoen > img:first-child:not(:last-child) {
+    position: absolute;
+}
+
+.cocoen picture.hidden,
+.cocoen img.hidden {
+    display: none;
+}
+
+.cocoen img {
+    height: auto;
+    z-index: 1;
+    transition: opacity .5s;
+}
+
+.cocoen picture {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.cocoen.inherit > picture,
+.cocoen.inherit > picture img,
+.cocoen.inherit > img {
+    width: auto;
+    height: 100%;
+}
+
+.cocoen div {
+    z-index: 2;
+}
+
+.cocoen div picture,
+.cocoen div img {
+    height: 100%;
+    width: auto;
+}
+
+.cocoen .icons {
+    z-index: 3;
+}
+
+.cocoen-handler {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .cocoen-drag {
+        width: 4px;
+        margin: -10px -2px;
+    }
+
+    .cocoen-label {
+        margin-bottom: 4em;
+    }
+}
